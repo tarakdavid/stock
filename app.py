@@ -14,9 +14,9 @@ def hello():
 def get_stock_value(ticker):
     bl = create_business_logic()
     prediction = bl.do_predictions_for(ticker)
+    test = "test"
 
     return f'{prediction}\n'
-
 
 if __name__ == '__main__':
     # Used when running locally only. When deploying to Cloud Run,
