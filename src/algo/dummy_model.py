@@ -114,6 +114,6 @@ class Stock_model(BaseEstimator, TransformerMixin):
         therefore = "therefore you should "
         wit = "with an accuracy of : "
         percent = "%"
-        ending = recent_close + str(close[-1])+", " + msg + str(predictions.flatten()[-1])+", " + therefore+ predictions2+" " + wit+ str(bal_log) + percent
-        # return recent_close, close[-1], msg, predictions.flatten()[-1], therefore, predictions2, wit, bal_log, percent
-        return ending
+        #ending = recent_close + str(close[-1])+", " + msg + str(predictions.flatten()[-1])+", " + therefore+ predictions2+" " + wit+ str(bal_log) + percent
+        #return recent_close, close[-1], msg, predictions.flatten()[-1], therefore, predictions2, wit, bal_log, percent
+        return predictions2
